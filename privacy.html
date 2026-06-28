@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ochrana osobních údajů — MAJSTR</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 36px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 6px;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .contact-box {
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  a {
+    color: #0066cc;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background: #f7f7f7;
+  }
+</style>
+</head>
+<body>
+
+<h1>Ochrana osobních údajů</h1>
+<p class="updated">Platné od: 28. června 2026</p>
+
+<p>Tato stránka popisuje, jaké osobní údaje MAJSTR shromažďuje, jak je používá a jak je chráníme. Tento dokument je vytvořen v souladu s Obecným nařízením o ochraně osobních údajů (GDPR — Nařízení EU 2016/679).</p>
+
+<div class="contact-box">
+  <strong>Provozovatel (správce osobních údajů):</strong><br>
+  Jakub — fyzická osoba podnikající<br>
+  Kontaktní e-mail: <a href="mailto:sir.kuba@seznam.cz">sir.kuba@seznam.cz</a><br>
+  Sídlo: Česká republika
+</div>
+
+<h2>1. Jaké údaje shromažďujeme</h2>
+
+<p>V rámci provozu platformy MAJSTR (zprostředkování řemeslnických služeb) shromažďujeme následující osobní údaje:</p>
+
+<table>
+  <tr><th>Kategorie</th><th>Konkrétní údaje</th><th>Od koho</th></tr>
+  <tr>
+    <td>Identifikační údaje</td>
+    <td>Jméno a příjmení</td>
+    <td>Zákazníci, řemeslníci</td>
+  </tr>
+  <tr>
+    <td>Kontaktní údaje</td>
+    <td>Telefonní číslo, e-mailová adresa</td>
+    <td>Zákazníci, řemeslníci</td>
+  </tr>
+  <tr>
+    <td>Lokační údaje</td>
+    <td>Adresa nebo lokalita zakázky</td>
+    <td>Zákazníci</td>
+  </tr>
+  <tr>
+    <td>Komunikační údaje</td>
+    <td>Obsah zpráv přes WhatsApp / SMS (v souvislosti se zprostředkováním zakázky)</td>
+    <td>Zákazníci, řemeslníci</td>
+  </tr>
+  <tr>
+    <td>Platební údaje</td>
+    <td>Transakční údaje zpracované prostřednictvím platební brány Stripe (Stripe Connect) — MAJSTR neukládá čísla platebních karet</td>
+    <td>Zákazníci, řemeslníci</td>
+  </tr>
+</table>
+
+<h2>2. Účel zpracování</h2>
+
+<p>Osobní údaje zpracováváme za účelem:</p>
+<ul>
+  <li>Zprostředkování kontaktu mezi zákazníkem a řemeslníkem</li>
+  <li>Komunikace ohledně konkrétní zakázky (potvrzení, upozornění, koordinace termínu)</li>
+  <li>Zpracování plateb za poskytnuté služby</li>
+  <li>Plnění zákonných povinností (např. účetní a daňové předpisy)</li>
+  <li>Zlepšování kvality a bezpečnosti platformy</li>
+</ul>
+
+<h2>3. Právní základ zpracování</h2>
+
+<ul>
+  <li><strong>Plnění smlouvy</strong> — zpracování nezbytné pro zprostředkování a realizaci zakázky</li>
+  <li><strong>Souhlas</strong> — u komunikace přes WhatsApp Business API, kde je vyžadován explicitní opt-in</li>
+  <li><strong>Oprávněný zájem</strong> — prevence podvodů, bezpečnost platformy</li>
+  <li><strong>Zákonná povinnost</strong> — účetní a daňové záznamy</li>
+</ul>
+
+<h2>4. Komunikace přes WhatsApp</h2>
+
+<p>MAJSTR využívá WhatsApp Business API (provozováno společností Meta) k zasílání zpráv souvisejících se zakázkami — např. potvrzení zakázky, odkazy na registraci, upozornění na nového řemeslníka.</p>
+
+<ul>
+  <li>Zprávy odesíláme pouze uživatelům, kteří k tomu dali souhlas (např. odpovědí na první zprávu nebo registrací v aplikaci)</li>
+  <li>Obsah zpráv je šifrován end-to-end (Signal protokol), v souladu se standardní WhatsApp infrastrukturou</li>
+  <li>Metadata zpráv (čas doručení, stav přečtení) zpracovává Meta jako technický poskytovatel infrastruktury</li>
+  <li>Uživatel může komunikaci kdykoliv odmítnout odpovědí "STOP" nebo žádostí na kontaktní e-mail</li>
+</ul>
+
+<h2>5. Komu údaje předáváme</h2>
+
+<p>Osobní údaje mohou být zpřístupněny následujícím třetím stranám, výhradně za účelem fungování služby:</p>
+
+<ul>
+  <li><strong>Meta / WhatsApp Business Platform</strong> — pro doručování zpráv</li>
+  <li><strong>Stripe</strong> — pro zpracování plateb (Stripe Connect)</li>
+  <li><strong>Twilio</strong> — pro technické zajištění SMS/WhatsApp komunikace</li>
+  <li><strong>Supabase</strong> — pro ukládání dat v databázi (hosting a autentizace)</li>
+</ul>
+
+<p>Tyto společnosti zpracovávají údaje na základě smluv o zpracování osobních údajů (DPA) a v souladu s GDPR. Údaje nikdy neprodáváme třetím stranám pro marketingové účely.</p>
+
+<h2>6. Doba uchovávání údajů</h2>
+
+<ul>
+  <li>Údaje o zakázkách a komunikaci: po dobu trvání smluvního vztahu + 3 roky (pro řešení případných sporů)</li>
+  <li>Účetní a daňové záznamy: dle zákonných lhůt platných v ČR (obvykle 10 let)</li>
+  <li>Údaje pro marketing/komunikaci: do odvolání souhlasu</li>
+</ul>
+
+<h2>7. Vaše práva</h2>
+
+<p>Jako subjekt údajů máte podle GDPR právo na:</p>
+
+<ul>
+  <li><strong>Přístup</strong> k vašim osobním údajům</li>
+  <li><strong>Opravu</strong> nepřesných údajů</li>
+  <li><strong>Výmaz</strong> ("právo být zapomenut")</li>
+  <li><strong>Omezení zpracování</strong></li>
+  <li><strong>Přenositelnost údajů</strong></li>
+  <li><strong>Vznesení námitky</strong> proti zpracování</li>
+  <li><strong>Odvolání souhlasu</strong> kdykoliv, bez vlivu na zákonnost předchozího zpracování</li>
+  <li><strong>Podání stížnosti</strong> u Úřadu pro ochranu osobních údajů (ÚOOÚ), www.uoou.cz</li>
+</ul>
+
+<p>Pro uplatnění jakéhokoliv z těchto práv nás kontaktujte na <a href="mailto:sir.kuba@seznam.cz">sir.kuba@seznam.cz</a>. Na žádost odpovíme nejpozději do 30 dnů.</p>
+
+<h2>8. Zabezpečení údajů</h2>
+
+<p>Přijímáme přiměřená technická a organizační opatření k ochraně osobních údajů před neoprávněným přístupem, ztrátou nebo zneužitím, včetně šifrované komunikace a omezeného přístupu k databázím.</p>
+
+<h2>9. Změny tohoto dokumentu</h2>
+
+<p>Tento dokument může být čas od času aktualizován. O podstatných změnách budeme uživatele informovat prostřednictvím platformy nebo e-mailu.</p>
+
+<h2>10. Kontakt</h2>
+
+<div class="contact-box">
+  Máte dotaz ohledně zpracování osobních údajů?<br>
+  Napište nám na: <a href="mailto:sir.kuba@seznam.cz">sir.kuba@seznam.cz</a>
+</div>
+
+</body>
+</html>
